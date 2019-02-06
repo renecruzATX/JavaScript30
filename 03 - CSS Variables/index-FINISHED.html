@@ -24,7 +24,7 @@
     :root {
       --base: #ffc600;
       --spacing: 10px;
-      --blur: 10px;
+      --blur: 40px;
     }
 
     img {
@@ -62,7 +62,7 @@
   <script>
     const inputs = document.querySelectorAll('.controls input');
 
-    function handleUpdate() {
+    function handleUpdate () {
       const suffix = this.dataset.sizing || '';
       document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
     }
